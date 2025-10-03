@@ -6,7 +6,7 @@ const MovieCard = (props) => {
     const { id, title, popularity, release_date, poster_path, overview, navigation } = props;
 
     return (
-    <Card containerStyle={styles.card}>
+    <Card containerStyle={styles.card} key={id}>
         <View style={styles.row}>
             <Card.Image
             style={styles.image}

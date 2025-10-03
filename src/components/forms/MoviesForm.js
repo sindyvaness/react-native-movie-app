@@ -19,7 +19,7 @@ const MoviesForm = (props) => {
     return (
         <View style={styles.formContainer}>
             <ListItem.Accordion
-                key={"0"}
+                key={"accordion-0"}
                 content={
                     <ListItem.Content>
                         <ListItem.Title>{option}</ListItem.Title>

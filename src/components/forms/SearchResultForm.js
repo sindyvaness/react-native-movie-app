@@ -19,18 +19,6 @@ const SearchResultForm = (props) => {
         onSelectChange(item); // on this way I get the value in the father component
     };
 
-    // this is from onSubmit
-    const validateInput = (input) => {
-        if (!value || value.trim() === '') {
-            setError('Movie/TV show name is required');
-            return false;
-        }
-
-        setError('');
-        return true;
-    };
-
-
     return(
         <View style={styles.formContainer}>
             <View style={styles.input}>
